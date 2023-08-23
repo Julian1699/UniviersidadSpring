@@ -16,7 +16,7 @@ Los usuarios cuentan con la posibilidad de ajustar la información de individuos
 - Eliminación de Registros:
 La plataforma brinda a los usuarios la facultad de eliminar individuos del sistema. Al acceder a la página destinada a la eliminación y suministrar el ID del individuo seleccionado, el individuo se excluye de la lista y su saldo ya no se considera en el cálculo del saldo global.
 
-- Seguridad y Gestión de Acceso en la Plataforma:
+# Seguridad y Gestión de Acceso en la Plataforma:
 
 En la plataforma, se ha implementado un sólido sistema de seguridad con el propósito de garantizar que los usuarios autorizados accedan únicamente a las áreas correspondientes. Este objetivo se alcanza mediante la autenticación y la autorización.
 
