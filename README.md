@@ -1,45 +1,36 @@
-# UniviersidadSpring
-Aplicacion Monolitica Spring-Thymeleaf-MySQL
+# Plataforma Monolítica Spring-Thymeleaf-MySQL para Gestión y Conexión Financiera
 
-Descripción de la Aplicación Monolítica:
+Esta plataforma monolítica ha sido concebida para facilitar la gestión y visualización de datos concernientes a individuos y sus balances financieros. Siguiendo una estructura arquitectónica unificada, todos los componentes y funcionalidades se encuentran integrados en un solo entorno. En este contexto, te encuentras en proceso de desarrollo de una aplicación web que permite realizar operaciones de Crear, Leer, Actualizar y Eliminar (CRUD) en registros vinculados a individuos.
 
-La aplicación monolítica está diseñada para gestionar y mostrar información sobre personas y sus saldos. Se basa en un patrón arquitectónico monolítico, lo que significa que todos los componentes y funcionalidades están integrados en una sola aplicación. En tu caso, parece que estás desarrollando una aplicación web que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en los registros de personas.
+La plataforma dispone de una interfaz web que otorga a los usuarios la habilidad de interactuar con información relacionada a individuos y sus respectivos saldos, a través de un navegador web. A continuación, se detallan las características clave de esta innovadora herramienta:
 
-La aplicación cuenta con una interfaz web que permite a los usuarios interactuar con los datos de personas y saldos a través de un navegador web. A continuación, se detallan las características clave de tu aplicación:
+- Exploración de Individuos:
+Al acceder a la página principal de la plataforma, los usuarios pueden acceder a un listado exhaustivo de todos los individuos registrados en el sistema. Este listado abarca datos tales como nombres y saldos de las personas. De igual forma, se calcula y muestra el total de los saldos acumulados de todos los individuos registrados, proporcionando así una panorámica global de la situación financiera en conjunto.
 
-Listado de Personas:
-Al acceder a la página principal de la aplicación, los usuarios pueden ver una lista de todas las personas registradas en el sistema. La lista incluye detalles como el nombre de la persona y su saldo. También se calcula y muestra el saldo total de todas las personas registradas, lo que brinda una vista general de la situación financiera general.
+- Incorporación de Nuevos Individuos:
+La plataforma permite a los usuarios la inclusión de nuevos individuos en el sistema. Al acceder a la página destinada a la incorporación de personas, los usuarios pueden ingresar información esencial, como nombres y saldos de los individuos. Una vez completados estos campos, los usuarios pueden almacenar los datos, generando así una nueva entrada en el listado de personas.
 
-Agregar Nueva Persona:
-La aplicación permite a los usuarios agregar nuevas personas al sistema. Al acceder a la página de agregar persona, los usuarios pueden ingresar los detalles de la nueva persona, incluido su nombre y saldo. Una vez completados los campos, los usuarios pueden guardar la información, lo que agrega una nueva entrada a la lista de personas.
+- Modificación de Datos Individuales:
+Los usuarios cuentan con la posibilidad de ajustar la información de individuos existentes mediante el acceso a la página de edición. Al proporcionar el ID del individuo que desean modificar, los usuarios pueden actualizar datos como nombres y saldos. Estas modificaciones se reflejan tanto en la lista general de individuos como en el saldo global.
 
-Editar Persona:
-Los usuarios pueden editar los detalles de una persona existente accediendo a la página de edición. Al proporcionar el ID de la persona que desean editar, los usuarios pueden actualizar su nombre y saldo. Los cambios se reflejan en la lista de personas y en el saldo total.
+- Eliminación de Registros:
+La plataforma brinda a los usuarios la facultad de eliminar individuos del sistema. Al acceder a la página destinada a la eliminación y suministrar el ID del individuo seleccionado, el individuo se excluye de la lista y su saldo ya no se considera en el cálculo del saldo global.
 
-Eliminar Persona:
-La aplicación permite a los usuarios eliminar personas del sistema. Al acceder a la página de eliminación y proporcionar el ID de la persona que se va a eliminar, la persona se elimina de la lista y su saldo se excluye del saldo total.
+- Seguridad y Gestión de Acceso en la Plataforma:
 
-Seguridad y Control de Acceso en la Aplicación:
+En la plataforma, se ha implementado un sólido sistema de seguridad con el propósito de garantizar que los usuarios autorizados accedan únicamente a las áreas correspondientes. Este objetivo se alcanza mediante la autenticación y la autorización.
 
-En la aplicación, se ha implementado un sistema de seguridad para garantizar que los usuarios adecuados tengan acceso a las partes correctas de la aplicación. Esto se logra a través de la autenticación y la autorización.
+- Autenticación:
+La autenticación consiste en el proceso mediante el cual los usuarios validan su identidad en la plataforma. Al ingresar sus credenciales, como el nombre de usuario y la contraseña, en un formulario de inicio de sesión, la plataforma verifica la autenticidad de estos datos. Si son correctos, los usuarios obtienen acceso a sus respectivas cuentas.
 
-Autenticación:
+- Autorización:
+La autorización regula las acciones y áreas de la plataforma a las cuales los usuarios pueden acceder tras haber completado el proceso de autenticación. Este sistema se basa en roles predefinidos. Algunos usuarios pueden poseer roles "ADMIN", otorgándoles la capacidad de realizar cambios sustanciales, mientras que otros usuarios podrían tener roles "USER", limitando su acceso a áreas específicas.
 
-La autenticación es el proceso mediante el cual los usuarios se identifican en la aplicación. Los usuarios deben ingresar sus credenciales (nombre de usuario y contraseña) en un formulario de inicio de sesión. La aplicación verifica estas credenciales y, si son correctas, permite que los usuarios accedan a sus cuentas.
+- Resguardo de Recursos:
+Los recursos engloban las páginas y funciones a las cuales los usuarios pueden acceder en la plataforma. Se han establecido normas que determinan qué recursos pueden ser accedidos según el rol del usuario. Por ejemplo, solo aquellos con el rol "ADMIN" pueden llevar a cabo ediciones, agregados o eliminaciones de elementos específicos, mientras que otros pueden acceder a áreas más generales.
 
-Autorización:
+- Manejo de Errores:
+En caso de que un usuario intente acceder a un recurso para el cual no tiene los permisos necesarios, la plataforma exhibirá un mensaje de error o redirigirá al usuario hacia una página designada para este propósito. Esto asegura que los usuarios únicamente accedan a las áreas correspondientes a sus roles.
 
-La autorización es el sistema que controla qué acciones y partes de la aplicación pueden realizar los usuarios después de autenticarse. Esto se basa en roles predefinidos. Por ejemplo, algunos usuarios pueden tener roles "ADMIN" que les permiten realizar cambios importantes, mientras que otros pueden tener roles "USER" que solo les permiten acceder a ciertas áreas.
-
-Protección de Recursos:
-
-Los recursos son las páginas o funciones de la aplicación a las que los usuarios pueden acceder. Se han establecido reglas para cada recurso en función de los roles de los usuarios. Por ejemplo, solo los usuarios con el rol "ADMIN" pueden editar, agregar o eliminar ciertos elementos, mientras que otros pueden acceder a áreas generales.
-
-Manejo de Errores:
-
-Si un usuario intenta acceder a un recurso para el que no tiene permiso, la aplicación mostrará un mensaje de error o lo redirigirá a una página de error. Esto garantiza que los usuarios solo accedan a las partes que les corresponden según sus roles.
-
-Protección de Contraseñas:
-
-Las contraseñas de los usuarios se almacenan de manera segura en la aplicación utilizando un método de cifrado avanzado. Esto asegura que incluso si alguien accede a la base de datos, no podrá ver las contraseñas reales de los usuarios.
-
+- Protección de Contraseñas:
+Las contraseñas de los usuarios son resguardadas de manera segura en la plataforma, empleando un método de cifrado avanzado. Esto garantiza que, incluso si alguien obtuviera acceso a la base de datos, no sería capaz de visualizar las contraseñas reales de los usuarios.
