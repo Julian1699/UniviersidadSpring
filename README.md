@@ -2,6 +2,14 @@
 
 Esta plataforma monolítica ha sido concebida para facilitar la gestión y visualización de datos concernientes a individuos y sus balances financieros. Siguiendo una estructura arquitectónica unificada, todos los componentes y funcionalidades se encuentran integrados en un solo entorno. En este contexto, te encuentras en proceso de desarrollo de una aplicación web que permite realizar operaciones de Crear, Leer, Actualizar y Eliminar (CRUD) en registros vinculados a individuos.
 
+Lo primero que se debe hacer para correr es ajustar las credenciales de la base de datos, ya que tu usuario y contraseña puede ser diferente del mio
+
+![image](https://github.com/Julian1699/UniviersidadSpring/assets/114323630/c3d11b12-17c5-4bfd-8508-5eeb1a01b5e2)
+
+Tomar el Script en SQL que esta lado del archivos application.properties y ejecutar ese codigo sql en una hoja de tu MySQL
+
+![image](https://github.com/Julian1699/UniviersidadSpring/assets/114323630/f0577264-05b1-48a8-af4d-498771720f82)
+
 La plataforma dispone de una interfaz web que otorga a los usuarios la habilidad de interactuar con información relacionada a individuos y sus respectivos saldos, a través de un navegador web. A continuación, se detallan las características clave de esta innovadora herramienta:
 
 - Exploración de Individuos:
